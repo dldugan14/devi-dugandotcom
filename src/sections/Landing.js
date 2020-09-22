@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Heading, Flex, Box, Text } from "rebass/styled-components";
+import { Heading } from "rebass/styled-components";
 import { SectionLink } from "react-scroll-section";
 import Section from "../components/Section";
 import MouseIcon from "../components/MouseIcon";
@@ -35,8 +35,6 @@ const Background = () => (
     />
   </div>
 );
-
-const centerHorizontally = { marginRight: "auto", marginLeft: "auto" };
 
 const LandingPage = () => (
   <Section.Container id="home" Background={Background}>

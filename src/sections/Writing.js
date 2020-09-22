@@ -2,14 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Heading, Text, Flex, Box } from "rebass/styled-components";
 import styled from "styled-components";
-import Fade from "react-reveal/Fade";
 import FontAwesomeIcon from "react-fontawesome";
 import Section from "../components/Section";
 import { CardContainer, Card } from "../components/Card";
 import Triangle from "../components/Triangle";
 import ImageSubtitle from "../components/ImageSubtitle";
 
-const MEDIUM_CDN = "https://cdn-images-1.medium.com/max/400";
+// const MEDIUM_CDN = "https://cdn-images-1.medium.com/max/400";
 const MEDIUM_URL = "https://medium.com";
 
 const Background = () => (
@@ -83,23 +82,23 @@ Post.propTypes = {
   time: PropTypes.number.isRequired,
 };
 
-const parsePost = (author) => (postFromGraphql) => {
-  const { id, uniqueSlug, createdAt, title, virtuals } = postFromGraphql;
-  const image =
-    virtuals.previewImage.imageId &&
-    `${MEDIUM_CDN}/${virtuals.previewImage.imageId}`;
+// const parsePost = (author) => (postFromGraphql) => {
+//   const { id, uniqueSlug, createdAt, title, virtuals } = postFromGraphql;
+//   const image =
+//     virtuals.previewImage.imageId &&
+//     `${MEDIUM_CDN}/${virtuals.previewImage.imageId}`;
 
-  return {
-    id,
-    title,
-    time: virtuals.readingTime,
-    date: createdAt,
-    text: virtuals.subtitle,
-    image,
-    url: `${MEDIUM_URL}/@${author.username}/${uniqueSlug}`,
-    Component: Post,
-  };
-};
+//   return {
+//     id,
+//     title,
+//     time: virtuals.readingTime,
+//     date: createdAt,
+//     text: virtuals.subtitle,
+//     image,
+//     url: `${MEDIUM_URL}/@${author.username}/${uniqueSlug}`,
+//     Component: Post,
+//   };
+// };
 
 const MorePosts = ({ username, name, number }) => (
   <Card
@@ -138,7 +137,7 @@ MorePosts.propTypes = {
   number: PropTypes.number,
 };
 
-const edgeToArray = (data) => data.edges.map((edge) => edge.node);
+// const edgeToArray = (data) => data.edges.map((edge) => edge.node);
 
 const Bingo = () => (
   <Section.Container id="Bingo" Background={Background}>

@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { Text, Box, Link, Flex } from "rebass/styled-components";
+import { Text, Box } from "rebass/styled-components";
 import Fade from "react-reveal/Fade";
-import SocialLink from "./SocialLink";
 
 const FooterContainer = styled.div`
   max-width: 1366px;

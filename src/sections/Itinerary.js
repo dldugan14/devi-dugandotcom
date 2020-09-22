@@ -1,6 +1,6 @@
 import React from "react";
-import { Box, Image, Flex } from "rebass/styled-components";
-import styled from "styled-components";
+import { Box, Flex } from "rebass/styled-components";
+// import styled from "styled-components";
 // import ReactMarkdown from "react-markdown";
 import Fade from "react-reveal/Fade";
 import Section from "../components/Section";
@@ -31,14 +31,14 @@ const Background = () => (
   </div>
 );
 
-const ProfilePicture = styled(Image)`
-  border-radius: 50%;
-  transition: all 0.25s ease-out;
+// const ProfilePicture = styled(Image)`
+//   border-radius: 50%;
+//   transition: all 0.25s ease-out;
 
-  &:hover {
-    border-radius: 20%;
-  }
-`;
+//   &:hover {
+//     border-radius: 20%;
+//   }
+// `;
 
 const Itinerary = () => (
   <Section.Container id="Itinerary" Background={Background}>
