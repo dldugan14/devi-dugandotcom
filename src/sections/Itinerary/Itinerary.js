@@ -76,7 +76,7 @@ const Itinerary = () => {
                   color="primary"
                   variant="extended"
                   size="large"
-                  href="https://dillondugan.com"
+                  href="https://us02web.zoom.us/j/89901320916?pwd=dlZaZ21DQTlWemNpMGVVK2dzZE9mUT09"
                 >
                   Join Zoom Call
                 </Fab>
