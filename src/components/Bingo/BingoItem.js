@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import theme from "../../styles/theme";
 import useStyles from "./styles";
 
 export default function BingoItem(props) {
@@ -24,7 +25,9 @@ export default function BingoItem(props) {
   return (
     <div
       className={classes.bingoItem}
-      style={{ backgroundColor: selected ? "green" : "white" }}
+      style={{
+        backgroundColor: selected ? theme.palette.colors.tertiary : "white",
+      }}
       onClick={changeColor}
     >
       <span className={getClassName()}>{word}</span>

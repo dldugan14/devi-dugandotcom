@@ -2,6 +2,7 @@ import React from "react";
 import Section from "../components/Section";
 import Triangle from "../components/Triangle";
 import Bingo from "../components/Bingo/Bingo";
+import Fade from "react-reveal/Fade";
 
 const Background = () => (
   <div>
@@ -32,7 +33,9 @@ const Background = () => (
 const BingoSection = () => (
   <Section.Container id='Bingo' Background={Background}>
     <Section.Header name='Bingo' icon='🎰' label='Bingo' />
-    <Bingo></Bingo>
+    <Fade bottom>
+      <Bingo></Bingo>
+    </Fade>
   </Section.Container>
 );
 
