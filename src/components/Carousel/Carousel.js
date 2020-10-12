@@ -6,6 +6,7 @@ import {
   ButtonBack,
   ButtonNext,
   Image,
+  DotGroup,
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import { useMediaQuery } from "@material-ui/core";
@@ -51,7 +52,7 @@ export default function Carousel() {
     return (
       <>
         <Slide index={0}>
-          <Image src={BD1}></Image>
+          <Image hasMasterSpinner src={BD1}></Image>
         </Slide>
         <Slide index={1}>
           <Image src={BT1}></Image>
@@ -157,7 +158,10 @@ export default function Carousel() {
             </ButtonBack>
           </div>
         )}
-        <Slider className={classes.slider}>{slideGenerator()}</Slider>
+        <div className={classes.sliderContainer}>
+          <Slider className={classes.slider}>{slideGenerator()}</Slider>
+          <DotGroup disableActiveDots className={classes.dots}></DotGroup>
+        </div>
         {!isMobile && (
           <div>
             <ButtonNext className={classes.button}>
