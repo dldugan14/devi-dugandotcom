@@ -10,21 +10,21 @@ import useStyles from "./styles";
 const Background = () => (
   <div>
     <Triangle
-      color="secondary"
+      color='secondary'
       height={["50vh", "20vh"]}
       width={["50vw", "50vw"]}
       invertY
     />
 
     <Triangle
-      color="primary"
+      color='primary'
       height={["20vh", "40vh"]}
       width={["75vw", "70vw"]}
       invertX
     />
 
     <Triangle
-      color="tertiary"
+      color='tertiary'
       height={["25vh", "20vh"]}
       width={["100vw", "100vw"]}
     />
@@ -41,44 +41,53 @@ const Itinerary = () => {
   const classes = useStyles();
 
   return (
-    <Section.Container id="Itinerary" Background={Background}>
-      <Section.Header name="Itinerary" icon="📝" label="Itinerary" />
-      <Flex justifyContent="center" alignItems="center" flexWrap="wrap">
+    <Section.Container id='Itinerary' Background={Background}>
+      <Section.Header name='Itinerary' icon='📝' label='Itinerary' />
+      <Flex justifyContent='center' alignItems='center' flexWrap='wrap'>
         <Box width={[1, 1, 4 / 6]} px={[1, 2, 4]}>
           <Fade bottom>
             <ItineraryContainer>
-              <Text fontSize={[3, 4, 5]} fontWeight="bold" color="text">
+              <Text fontSize={[3, 4, 5]} fontWeight='bold' color='text'>
                 3:00 - 3:15
               </Text>
-              <Text fontSize={[3, 4, 5]} color="text">
+              <Text fontSize={[3, 4, 5]} color='text'>
                 Introductions / Greetings
               </Text>
-              <Text fontSize={[3, 4, 5]} fontWeight="bold" color="text">
+              <Text fontSize={[3, 4, 5]} fontWeight='bold' color='text'>
                 3:15 - 4:00
               </Text>
-              <Text fontSize={[3, 4, 5]} color="text">
+              <Text fontSize={[3, 4, 5]} color='text'>
                 Opening presents and playing bingo
               </Text>
-              <Text fontSize={[3, 4, 5]} fontWeight="bold" color="text">
+              <Text fontSize={[3, 4, 5]} fontWeight='bold' color='text'>
                 4:00 - 4:15
               </Text>
-              <Text fontSize={[3, 4, 5]} color="text">
+              <Text fontSize={[3, 4, 5]} color='text'>
                 Nursery tour
               </Text>
-              <Text fontSize={[3, 4, 5]} fontWeight="bold" color="text">
+              <Text fontSize={[3, 4, 5]} fontWeight='bold' color='text'>
                 4:15 - 5:00
               </Text>
-              <Text fontSize={[3, 4, 5]} color="text">
+              <Text fontSize={[3, 4, 5]} color='text'>
                 Advice for the parents-to-be / chit chat
               </Text>
               <div className={classes.buttonContainer}>
                 <Fab
-                  color="primary"
-                  variant="extended"
-                  size="large"
-                  href="https://us02web.zoom.us/j/89901320916?pwd=dlZaZ21DQTlWemNpMGVVK2dzZE9mUT09"
+                  color='primary'
+                  variant='extended'
+                  size='large'
+                  href='https://us02web.zoom.us/j/89901320916?pwd=dlZaZ21DQTlWemNpMGVVK2dzZE9mUT09'
                 >
                   Join Zoom Call
+                </Fab>
+                <Fab
+                  color='secondary'
+                  variant='extended'
+                  size='large'
+                  target='_blank'
+                  href='https://www.babylist.com/baby-registry-christina-dugan'
+                >
+                  Go to Registry
                 </Fab>
               </div>
             </ItineraryContainer>

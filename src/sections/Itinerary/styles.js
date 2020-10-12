@@ -6,5 +6,12 @@ export default makeStyles((theme) => ({
     color: theme.palette.text.primary,
     display: "flex",
     justifyContent: "center",
+    flexWrap: "wrap",
+    "& :last-child": {
+      marginLeft: "2rem",
+      [theme.breakpoints.down("sm")]: {
+        marginLeft: "0.5rem",
+      },
+    },
   },
 }));
