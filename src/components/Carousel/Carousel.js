@@ -158,10 +158,8 @@ export default function Carousel() {
             </ButtonBack>
           </div>
         )}
-        <div className={classes.sliderContainer}>
-          <Slider className={classes.slider}>{slideGenerator()}</Slider>
-          <DotGroup disableActiveDots className={classes.dots}></DotGroup>
-        </div>
+        <Slider className={classes.slider}>{slideGenerator()}</Slider>
+
         {!isMobile && (
           <div>
             <ButtonNext className={classes.button}>
