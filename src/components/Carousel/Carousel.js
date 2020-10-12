@@ -151,22 +151,23 @@ export default function Carousel() {
       totalSlides={30}
     >
       <div className={classes.root}>
-        {!isMobile && (
-          <div>
-            <ButtonBack className={classes.button}>
-              <FontAwesomeIcon size='4x' name='chevron-left' />
-            </ButtonBack>
-          </div>
-        )}
+        <div>
+          <ButtonBack className={classes.button}>
+            <FontAwesomeIcon
+              size={isMobile ? "sm" : "4x"}
+              name='chevron-left'
+            />
+          </ButtonBack>
+        </div>
         <Slider className={classes.slider}>{slideGenerator()}</Slider>
-
-        {!isMobile && (
-          <div>
-            <ButtonNext className={classes.button}>
-              <FontAwesomeIcon size='4x' name='chevron-right' />
-            </ButtonNext>
-          </div>
-        )}
+        <div>
+          <ButtonNext className={classes.button}>
+            <FontAwesomeIcon
+              size={isMobile ? "sm" : "4x"}
+              name='chevron-right'
+            />
+          </ButtonNext>
+        </div>
       </div>
     </CarouselProvider>
   );
