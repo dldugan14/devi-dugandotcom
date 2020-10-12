@@ -6,7 +6,6 @@ import {
   ButtonBack,
   ButtonNext,
   Image,
-  DotGroup,
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import { useMediaQuery } from "@material-ui/core";
