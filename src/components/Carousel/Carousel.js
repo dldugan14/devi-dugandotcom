@@ -28,10 +28,7 @@ export default function Carousel() {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   function slideGenerator() {
-    const images = importAll(
-      require.context("./images", false, /\.(png|jpe?g|svg|webp)$/)
-    );
-
+    const images = importAll(require.context("./images", false, /\.(jpg)$/));
     return imageNames.map((img, i) => {
       return (
         <Slide index={i} key={img}>
@@ -51,7 +48,7 @@ export default function Carousel() {
         <div>
           <ButtonBack className={classes.button}>
             <FontAwesomeIcon
-              size={isMobile ? "sm" : "4x"}
+              size={isMobile ? "lg" : "4x"}
               name='chevron-left'
             />
           </ButtonBack>
@@ -60,7 +57,7 @@ export default function Carousel() {
         <div>
           <ButtonNext className={classes.button}>
             <FontAwesomeIcon
-              size={isMobile ? "sm" : "4x"}
+              size={isMobile ? "lg" : "4x"}
               name='chevron-right'
             />
           </ButtonNext>
